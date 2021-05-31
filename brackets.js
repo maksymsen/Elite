@@ -1,7 +1,5 @@
 var ss = SpreadsheetApp.getActiveSpreadsheet();
-
 var RANGE_COMMANDERS = 'FirstCommander';
-
 var SHEET_COMMANDERS = 'Commanders';
 
 function onOpen() {
@@ -27,8 +25,6 @@ function createLargeBracket() {
 }
 
 // "all" keyword can be considered, but it would honestly be better to generate the brackets one at a time.
-
-
 function createBracket(size) {
   // eg. SHEET_DETERMINED_BRACKET_SIZE = 'Small Bracket'
   // countNodesUpperBound later on will be used to determine the bracket size, and is just an int (32, 16, 8, or 4)
